@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ku">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L18-F3</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+    input, button {
+      padding: 10px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    button {
+      background-color: #28a745;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+<h2>تکایە وشەی نهێنی بنوسە</h2>
+<input type="password" id="password" placeholder="وشەی نهێنی">
+<button onclick="checkPassword()">چوونەژوورەوە</button>
+
+<script>
+  function checkPassword() {
+    const correctPassword = "L18F3000"; // وشەی نهێنی لێرە دابنێ
+    const enteredPassword = document.getElementById("password").value;
+    if (enteredPassword === correctPassword) {
+      window.location.href = "https://sites.google.com/view/l18-f3/%D8%B3%DB%95%D8%B1%DB%95%DA%A9%DB%8C"; // ئەم فایلە پەڕەی ناوخۆیە
+    } else {
+      alert("وشەی نهێنی هەڵەیە!");
+    }
+  }
+
+</script>
+
+</body>
+</html>
