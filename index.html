@@ -1,55 +1,48 @@
 <!DOCTYPE html>
-<html >
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>L18-F3</title>
-  <style>
+  <script src="https://cdn.tailwindcss.com"></script>
 
+<style text>
 
-img {
-	position: absolute;
-  width: 200px;
-	left: 50%;
-	top: 33%;
-	transform: translate(-50%, -50%);
-	font-family: sans-serif;
-	user-select: none;
+body {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.562),hwb(0 0% 100% / 0.562)), url(sarbazi.jpg);
+
 }
 
-    body {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.562),hwb(0 0% 100% / 0.562)), url(../وێنە/sarbazi.jpg);
-      background-size: 150%;
-      height: 130vh;
+</style>
 
-    }
-    a {
-      margin: 10px;
-      padding: 15px 50px;
-      font-size: 18px;
-      cursor: pointer;
-      border: none;
-      border-radius: 8px;
-      background-color: #df4a14;
-      color: white;
-      transition: background-color 0.3s;
-    }
-    a:hover {
-      background-color: #2bff00;
-    }
-  </style>
+
 </head>
-<body>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
 
-<img  src="logo.png" alt="1.jpg">
+  <div class="text-center space-y-6">
+    <!-- Logo -->
+    <img src="فەرمانەکانی بەشی دوو/index/logo.png" alt="Logo" class="mx-auto w-32 h-32 object-contain" />
 
-
-  <a href ="1.html" >بەشی حسابات</a>
-  <a href ="2.html">بەشی ئیدارە</a>
-
+    <!-- Buttons -->
+    <div class="space-x-4">
+      <a href="1.html">
+        <button
+        class="px-6 py-3 bg-blue-500 text-white rounded-xl hover:bg-blue-600 transition"
+      >
+    
+        بەشی حسابات
+      </button>
+    </a>
+    <a href="2.html" >
+      <button
+        class="px-6 py-3 bg-green-500 text-white rounded-xl hover:bg-green-600 transition"
+      >
+        بەشی ئیدارە
+      </button>
+    </a>
+    </div>
+  </div>
 
 </body>
 </html>
